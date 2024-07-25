@@ -1,0 +1,27 @@
+/* src/PlayersList.css */
+.players-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .player-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: bisque;
+
+  }
+  
+  .player-img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+  }
+  
+  .player-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(152, 2, 2, 0.2);
+  }
+  
